@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GDSC Hongik</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>GDSC Hongik!</h1>
+        </header>
+        <div id="grid">
+            <nav>
+                <ul>
+                    <li><a href="#change-title">제목 바꾸기</a></li>
+                    <li><a href="#change-title-color">제목 색 바꾸기</a></li>
+                    <li><a href="#calculator">간단한 계산기</a></li>
+                </ul>
+                <input type="button" value="night" onclick="nightDayHandler(this)">
+            </nav>
+            <main>
+                <section id="change-title">
+                    <h2>제목 바꾸기</h2>
+                    <input type="text" id="textInput" onchange="changeTitle(this)">
+                </section>
+                <section id="change-title-color">
+                    <h2>제목 색 바꾸기</h2>
+                    <input type="button" value="Red" onclick="changeTitleColor('red')">
+                    <input type="button" value="Green" onclick="changeTitleColor('green')">
+                    <input type="button" value="Blue" onclick="changeTitleColor('blue')">
+                    <input type="button" value="Black" onclick="changeTitleColor('black')">
+                    <input type="button" value="White" onclick="changeTitleColor('white')">
+                    <input type="button" value="Random" onclick="changeTitleColor('random')">
+                </section>
+                <section id="calculator">
+                    <h2>간단한 계산기</h2>
+                    <input type="number" id="first">
+                    <select name="operator" id="operator">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                    </select>
+                    <input type="number" id="second">
+                    <input type="button" value="=" onclick="calculator()">
+                    <span id="result"></span>
+                </section>
+            </main>
+        </div> 
+    </body>
+</html>
