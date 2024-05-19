@@ -1,0 +1,25 @@
+h1{
+    color: blue;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 0;
+    padding: 10px;
+}
+nav {
+    border-right: 2px solid black;
+    margin: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 200px 1fr;  
+}
+#grid nav{
+    padding-left: 25px;
+}
+#grid main{
+    padding-left: 25px;
+}
